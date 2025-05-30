@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delicious Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="css/animations.css">
+  </head>
+  <body class="dark-mode">
+    <div id="app">
+      <!-- Fixed Navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Witch</a>
+          <div class="d-flex align-items-center">
+            <div class="toggle-container me-2">
+              <button id="theme-toggle" class="toggle-btn theme-toggle" aria-label="Toggle theme">
+                <i class="bi bi-moon-fill"></i>
+              </button>
+              <button id="lang-toggle" class="toggle-btn lang-toggle ms-2" aria-label="Toggle language">
+                <span>EN</span>
+              </button>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#crepes">Crepes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#syrian">Syrian</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cold-drinks">Cold Drinks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hot-drinks">Hot Drinks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#breakfast">Breakfast</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pizza">Pizza</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section id="hero" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="hero-content">
+                <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Delicious Bites Logo" class="hero-logo">
+                <h1 class="restaurant-name">Witch</h1>
+                <p class="restaurant-slogan">Taste the extraordinary</p>
+                <p class="restaurant-desc">Welcome to our culinary paradise where every bite tells a story. Explore our diverse menu crafted with passion and the finest ingredients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Sections -->
+      <section id="crepes" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Crepes</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Nutella Crepe</h3>
+                  <p class="menu-item-desc">Sweet crepe filled with Nutella chocolate spread</p>
+                  <p class="menu-item-price">$6.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Strawberry Crepe</h3>
+                  <p class="menu-item-desc">Fresh strawberries with whipped cream</p>
+                  <p class="menu-item-price">$7.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Savory Chicken Crepe</h3>
+                  <p class="menu-item-desc">Grilled chicken with mushrooms and cheese</p>
+                  <p class="menu-item-price">$9.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Banana Caramel Crepe</h3>
+                  <p class="menu-item-desc">Sliced bananas with caramel sauce and ice cream</p>
+                  <p class="menu-item-price">$8.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="syrian" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Syrian</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Shawarma Plate</h3>
+                  <p class="menu-item-desc">Marinated chicken or beef with rice and salad</p>
+                  <p class="menu-item-price">$12.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Falafel Wrap</h3>
+                  <p class="menu-item-desc">Crispy falafel with tahini sauce and vegetables</p>
+                  <p class="menu-item-price">$7.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Kibbeh</h3>
+                  <p class="menu-item-desc">Minced meat with bulgur wheat and spices</p>
+                  <p class="menu-item-price">$8.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Hummus Plate</h3>
+                  <p class="menu-item-desc">Creamy hummus with olive oil and fresh pita bread</p>
+                  <p class="menu-item-price">$6.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cold-drinks" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Cold Drinks</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2103940/pexels-photo-2103940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fresh Lemonade">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Fresh Lemonade</h3>
+                  <p class="menu-item-desc">Freshly squeezed lemons with mint leaves</p>
+                  <p class="menu-item-price">$3.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/5432410/pexels-photo-5432410.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fruit Smoothie">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Fruit Smoothie</h3>
+                  <p class="menu-item-desc">Blend of seasonal fruits with yogurt</p>
+                  <p class="menu-item-price">$5.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/2775860/pexels-photo-2775860.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Iced Coffee">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Iced Coffee</h3>
+                  <p class="menu-item-desc">Cold brew coffee with cream and ice</p>
+                  <p class="menu-item-price">$4.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/602750/pexels-photo-602750.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fresh Orange Juice">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Fresh Orange Juice</h3>
+                  <p class="menu-item-desc">Freshly squeezed orange juice</p>
+                  <p class="menu-item-price">$4.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hot-drinks" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Hot Drinks</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Espresso">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Espresso</h3>
+                  <p class="menu-item-desc">Single shot of rich espresso</p>
+                  <p class="menu-item-price">$2.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cappuccino">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Cappuccino</h3>
+                  <p class="menu-item-desc">Espresso with steamed milk and foam</p>
+                  <p class="menu-item-price">$4.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/230477/pexels-photo-230477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Green Tea">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Green Tea</h3>
+                  <p class="menu-item-desc">Premium green tea leaves with honey</p>
+                  <p class="menu-item-price">$3.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-image">
+                  <img src="https://images.pexels.com/photos/851555/pexels-photo-851555.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hot Chocolate">
+                </div>
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Hot Chocolate</h3>
+                  <p class="menu-item-desc">Rich chocolate with steamed milk and whipped cream</p>
+                  <p class="menu-item-price">$4.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="breakfast" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Breakfast Sandwiches</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Egg & Cheese</h3>
+                  <p class="menu-item-desc">Fried egg with American cheese on a toasted bagel</p>
+                  <p class="menu-item-price">$5.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Bacon & Egg</h3>
+                  <p class="menu-item-desc">Crispy bacon with fried egg and cheese</p>
+                  <p class="menu-item-price">$6.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Avocado Toast</h3>
+                  <p class="menu-item-desc">Smashed avocado with poached egg on sourdough</p>
+                  <p class="menu-item-price">$8.50</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Veggie Wrap</h3>
+                  <p class="menu-item-desc">Scrambled eggs with peppers, onions, and spinach</p>
+                  <p class="menu-item-price">$7.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pizza" class="section menu-section">
+        <div class="container">
+          <h2 class="section-title">Pizza</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Margherita</h3>
+                  <p class="menu-item-desc">Fresh tomatoes, mozzarella, and basil</p>
+                  <p class="menu-item-price">$12.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Pepperoni</h3>
+                  <p class="menu-item-desc">Classic pepperoni with mozzarella cheese</p>
+                  <p class="menu-item-price">$14.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">Vegetarian</h3>
+                  <p class="menu-item-desc">Bell peppers, mushrooms, onions, and olives</p>
+                  <p class="menu-item-price">$13.99</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+              <div class="menu-item">
+                <div class="menu-item-content">
+                  <h3 class="menu-item-title">BBQ Chicken</h3>
+                  <p class="menu-item-desc">Grilled chicken with BBQ sauce and red onions</p>
+                  <p class="menu-item-price">$15.99</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scroll to Top Button -->
+      <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>

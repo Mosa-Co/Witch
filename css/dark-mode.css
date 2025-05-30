@@ -1,0 +1,74 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  --text-color: #f1f1f1;
+  --text-color-light: #ffffff;
+  --bg-color: #121212;
+  --bg-color-light: #1e1e1e;
+  --card-bg: #2d2d2d;
+  --navbar-bg: rgba(29, 29, 29, 0.95);
+  --shadow-color: rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .navbar-brand {
+  color: var(--secondary-color);
+}
+
+body.dark-mode .nav-link {
+  color: var(--text-color-light);
+}
+
+body.dark-mode .nav-link:hover, 
+body.dark-mode .nav-link:focus {
+  color: var(--secondary-color);
+}
+
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+body.dark-mode .theme-toggle {
+  background-color: var(--secondary-dark);
+}
+
+body.dark-mode .theme-toggle i {
+  content: "\F5A2"; /* Bootstrap icon for sun */
+}
+
+body.dark-mode #hero {
+  background: linear-gradient(135deg, #330000, var(--primary-dark));
+}
+
+body.dark-mode .menu-item {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .menu-item-title {
+  color: var(--secondary-color);
+}
+
+body.dark-mode .menu-item-price {
+  color: var(--primary-light);
+}
+
+body.dark-mode .menu-item-desc {
+  opacity: 0.7;
+}
+
+body.dark-mode .scroll-to-top {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+body.dark-mode .scroll-to-top:hover {
+  background-color: var(--secondary-dark);
+}
+
+/* Arabic text adjustments in dark mode */
+body.dark-mode.ar .menu-item-title,
+body.dark-mode.ar .section-title {
+  color: var(--secondary-color);
+}
